@@ -1,6 +1,6 @@
 #!/bin/sh
 
-INSPIRCD_VERSION=2.0.18
+INSPIRCD_VERSION=2.0.21
 URL="https://github.com/inspircd/inspircd/archive/v${INSPIRCD_VERSION}.tar.gz"
 
 cd "$( dirname "$0" )"

@@ -2,7 +2,7 @@ Docker InspIRCd
 ===============
 
 These Dockerfiles build a container housing InspIRCd. The current version
-is 2.0.18.
+is 2.0.21.
 
 This repository is split into two Dockerfiles. The first, in the build/
 directory, builds the image for the build environment. That image is
@@ -13,16 +13,11 @@ InspIRCd binary built in the build environment to create an image without
 build-essentials.
 
 To use this image you will need to populate the /inspircd/conf directory
-with configuration files. There are two ways to do this:
+with configuration files:
 
-1. Bind a conf/ directory from the host machine
+Bind a conf/ directory from the host machine
 
-    docker run -v /my/conf:/inspircd/conf -p 6667 insomniairc/inspircd
-
-2. Create your own image using insomniairc/inspircd as a base. For an
-   example, see [insomniairc/insomniaircd][insomniaircd]
-
-[insomniaircd]: https://github.com/insomniairc/insomniaircd
+    docker run -v /my/conf:/inspircd/conf -p 6667 inspircd
 
 
 Building
